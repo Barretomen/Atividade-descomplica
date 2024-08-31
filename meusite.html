@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Básico</title>
+    <!-- Link para o Bootstrap via CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Menu de Navegação -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 class="display-4">Bem-vindo ao Meu Site</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">MeuSite</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Corpo da Página -->
+    <main class="mt-5">
+        <div class="container">
+            <!-- Seção de Destaque -->
+            <section class="jumbotron bg-light text-dark p-5">
+                <h2 class="display-5">Conheça Nossos Serviços</h2>
+                <p class="lead">Oferecemos soluções personalizadas para atender suas necessidades.</p>
+                <a href="#" class="btn btn-primary">Saiba Mais</a>
+            </section>
+
+            <!-- Seções com Cards -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/vetores-gratis/modelo-de-adesivo-com-uma-unica-casa-isolada_1308-64529.jpg?t=st=1725126255~exp=1725129855~hmac=bc1e47601a745c277398179ec12883a2d0abd075b17d9349fbccb265ddf4f966&w=1380" class="card-img-top" alt="Imagem 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Serviço 1</h5>
+                            <p class="card-text">Serviços relacionados a casa.</p>
+                            <a href="#" class="btn btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/fotos-premium/desenho-de-fundo-de-jardim_1003030-16284.jpg?w=2000" class="card-img-top" alt="Imagem 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Serviço 2</h5>
+                            <p class="card-text">Serviços relacionados a jardim.</p>
+                            <a href="#" class="btn btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/vetores-gratis/canteiro-de-obras-isolado-com-trabalhadores_1308-97934.jpg?t=st=1725126338~exp=1725129938~hmac=fc2dcb1f8e4799c0b52ce41fe9e5fd1aa40a6fa246ef1e157cd6e0682321f113&w=1380" class="card-img-top" alt="Imagem 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Serviço 3</h5>
+                            <p class="card-text">Serviços relacionados a construção.</p>
+                            <a href="#" class="btn btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            &copy; <span id="year"></span> Meu Site. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Script para atualizar o ano automaticamente
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
